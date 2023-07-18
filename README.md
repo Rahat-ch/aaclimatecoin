@@ -1,6 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository was used for workshops at Infrocon and Polygon Guild Parist events in Paris during Eth CC 2023. Based on the workshop and the alpha documentation below, finish the implementation. 
+
+Final implementation should allow for: 
+
+- Farmers to claim their rewards
+- New Farmers to add themselves to a waitlist 
+- An implementation of the Admin dashboard where an admin can: approve farmers from the waitlist as well as approve any claims they have made. 
+- All transactions should be gasless or allow for ERC20 payments in gas. 
+
+Biconomy dashboard documentation: 
+https://bicodocs-yamx.vercel.app/docs/category/biconomy-dashboard
+
+Use the implementation of the Farmer claim to help you implement more gasless transactions!
+
+Deployed climate coin contract:
+https://mumbai.polygonscan.com/address/0x61ec475c64c5042a6Cbb7763f89EcAe745fc8315
+
+Original climate coin contract:
+https://github.com/teeolendo/climatecoin
 
 ## Getting Started
+
+Install with: 
+
+```bash
+npm install
+# or
+yarn 
+```
+
 
 First, run the development server:
 
@@ -12,27 +39,11 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a .env file with the following variable: 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_BICONOMY_PAYMASTER_URL=
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Make sure to get this from the paymaster dashboard documentation linked above! 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Tweet your solution to @biconomy and @rahatcodes along with an address for something cool!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
