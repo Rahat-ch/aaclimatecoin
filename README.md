@@ -8,7 +8,7 @@ Final implementation should allow for:
 - All transactions should be gasless or allow for ERC20 payments in gas. 
 
 Biconomy dashboard documentation: 
-https://bicodocs-yamx.vercel.app/docs/category/biconomy-dashboard
+https://docs.biconomy.io
 
 Use the implementation of the Farmer claim to help you implement more gasless transactions!
 
